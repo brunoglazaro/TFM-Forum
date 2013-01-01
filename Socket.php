@@ -2,9 +2,13 @@
 class Socket {
 
 	private $socket = null;
-	private static $serverIP = '37.59.46.220';
+	private $serverIP;
 	private static $ports = array(443, 44444, 44440, 5555, 3724, 6112);
 
+	// Constructor
+	public function __construct($IP) {
+		$this->serverIP = $IP;
+	}
 
 	// Socket connection
 	public function connect()
@@ -12,7 +16,7 @@ class Socket {
 
 		// Loop through ports & connect
 		for($i = 0; $i < count(self::$ports); $i++) {
-			if(($this->socket = stream_socket_client('tcp://' . self::$serverIP . ':' . self::$ports[$i], $errno, $errstr, 15)) !== false)
+			if(($this->socket = stream_socket_client('tcp://' . $this->serverIP . ':' . self::$ports[$i], $errno, $errstr, 15)) !== false)
 				break;
 		}
 
@@ -23,7 +27,7 @@ class Socket {
 
 
 	// Send a packet
-	public function send($packet, $debug = false)
+	public function send($packet)
 	{
 
 		// Prepend packet with its size
@@ -47,8 +51,12 @@ class Socket {
 	public function parse($packet)
 	{
 
+		// Get C & CC
 		$C = ord($packet[4]);
 		$CC = ord($packet[5]);
+
+		// Trim packet
+		$packet = substr($packet, 6)
 
 
 		if($C == 40 && $CC == 40) {		// ping
@@ -59,7 +67,8 @@ class Socket {
 
 		else if($C == 2 && $CC == 2) {	// Handshake answer
 
-			// Nothing yet
+			readCatList($packet);
+			$this->close();
 
 		}
 

@@ -1,0 +1,693 @@
+html, body, table, div, form, p, h1, h2, h3, h4, h5, pre, blockquote, ul, ol, li, dl, dt, dd, th, td, fieldset, legend img, abbr, cite {
+    border: 0 none;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background: none repeat scroll 0 0 #C9C9C9;
+    color: #333333;
+    border-color: #CAD7E1;
+	
+}
+ul, ol {
+    list-style: none outside none;
+}
+html {
+	font-size: 100%;
+	height:100%;
+}
+body {
+    font: 81.25% Arial,Helvetica,sans-serif;
+	height:100%;
+}
+table, td, th, textarea {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+pre, code {
+    font-family: consolas,monaco,"bitstream vera sans mono","courier new",courier,monospace;
+    font-size: 1em;
+}
+pre code {
+    font-size: 1em;
+}
+table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    width: 100%;
+}
+h1 {
+    font: 2.154em "Trebuchet MS",Arial,Helvetica,sans-serif;
+    padding: 7px 0;
+}
+h2, .hd h2 {
+    font: 1.262em "Trebuchet MS",Arial,Helvetica,sans-serif;
+    padding: 7px 0;
+}
+h3 {
+    font-size: 1.154em;
+    line-height: 1.267em;
+    padding: 7px 0;
+}
+h4 {
+    font-size: 1.077em;
+    font-weight: bold;
+    padding: 7px 0;
+}
+h5, h6 {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 7px 0;
+}
+p, ul, ol, th, td {
+    padding: 7px 0;
+}
+th, span.warntext, p.warntext {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+}
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+.icon div, .icon-locked div {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999em;
+    width: 0;
+}
+.inbox, #brdmain, .crumbs, .pagepost {
+    min-height: 1px;
+}
+* html .inbox, * html #brdmain {
+    display: inline-block;
+}
+* html .inbox, * html #bdrdmain {
+    display: block;
+}
+.inbox:after, #brdmain:after, .crumbs:after, .pagepost:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+#brdmain {
+    border: 1px solid;
+    border-radius: 10px 10px 5px 5px;
+    margin: 1.59% auto 30px;
+    padding: 10px 1.59%;
+    width: 75%;
+	background: none repeat scroll 0 0 #E0E0E0;
+    border-color: #B6B6B6;
+	margin-bottom: 1.59%;
+    padding-top: 1.59%;
+}
+header {
+    border-top: 4px solid;
+	border-color: #294F6E;
+}
+header .inbox {
+    margin: 0 auto;
+    padding-left: 1.59%;
+    padding-right: 1.59%;
+    width: 75%;
+}
+#brdtitle {
+    background: url("images/transformice.png") no-repeat scroll left 20px transparent;
+    height: 125px;
+    color: #44699C;
+    text-shadow: 2px -1px 1px #FFFFFF;
+}
+#brdtitle h1 {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999em;
+    width: 0;
+}
+nav ul {
+    padding: 0;
+}
+nav {
+    border-bottom: 1px outset;
+    border-radius: 5px 5px 5px 5px;
+    border-top: 1px solid;
+    padding: 6px 0;
+    text-align: center;
+    border-bottom-color: #C6C6C6;
+    border-top-color: #666666;
+    color: #545454;
+    background: none repeat scroll 0 0 #44699C;
+}
+nav li {
+    display: inline;
+}
+nav a:link, nav a:visited {
+    font-weight: bold;
+    padding: 6px 10px;
+    white-space: nowrap;
+}
+nav a:hover, #brmenu a:active, nav a:focus {
+    text-decoration: none;
+}
+footer {
+    border-top: 1px solid;    
+    border-color: #294F6E;
+	background: none repeat scroll 0 0 #E0E0E0;
+}
+footer .inbox {
+    margin: 0 auto;
+    width: 78%;
+}
+footer .conl {
+    float: left;
+}
+footer .conr {
+    float: right;
+    text-align: right;
+}
+footer .poweredby a {
+    font-size: 1.077em;
+    font-weight: bold;
+}
+.postlink {
+    float: right;
+    font-weight: bold;
+    text-align: right;
+}
+#brdmain .blocktable {
+    position: relative;
+}
+/*#brdmain .blocktable h2 {
+    background: url("images/fleche_blanche.gif") no-repeat scroll 8px center transparent;
+    font: bold 1em Arial,Helvetica,sans-serif;
+    left: 0;
+    margin: 0;
+    padding-left: 25px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 100;
+}
+.blocktable th.tcl {
+    font-size: 0;
+    text-indent: -9999em;
+}*/
+.blocktable .inbox {
+    margin-top: 10px;
+}
+#idx1.blocktable .inbox {
+    margin-top: 0;
+}
+.blocktable .inbox {
+    margin-bottom: -1px;
+    overflow: hidden;
+    position: relative;
+}
+* html .blocktable .inbox {
+    display: inline-block;
+}
+.blocktable table {
+    margin-bottom: -1px;
+    table-layout: fixed;
+}
+.blocktable th {
+    border-style: none none solid;
+    border-width: 1px;
+    padding: 7px 8px;
+    text-align: left;
+}
+.blocktable th.tcl {
+    border-radius: 5px 0 0 0;
+}
+.blocktable th.tcr {
+}
+.blocktable td {
+    border-style: none none solid;
+    border-width: 1px;
+    line-height: 1.5em;
+    padding: 7px 8px;
+    text-align: left;
+}
+.blocktable h3 {
+    font-size: 1.077em;
+    font-weight: bold;
+    padding: 0;
+}
+.blocktable p {
+    padding: 0;
+}
+.blocktable .tcl p {
+    padding: 5px 0 0;
+}
+.blocktable .tcl {
+    width: auto;
+}
+.blocktable .tc2, .blocktable .tcmod {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 11%;
+}
+.blocktable .tcr {
+    width: 30%;
+}
+.blocktable td .newtext, .blocktable td .pagestext, .blocktable td .byuser {
+    white-space: nowrap;
+}
+.blocktable .tcl h3 span.newtext {
+    font-size: 0.929em;
+    font-weight: normal;
+}
+/*.tcr .byuser {
+    display: block;
+}*/
+td.tc2, td.tcr, td.tcl div.forumdesc {
+    font-size: 0.923em;
+}
+.blocktable .tclcon {
+    height: 1%;
+    min-height: 1px;
+    overflow: hidden;
+    padding: 0 11px 0 12px;
+    position: relative;
+}
+.blocktable .tclcon div {
+    overflow: hidden;
+    width: 100%;
+}
+.icon {
+    border-style: solid;
+    border-width: 8px;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+	border-color: #E8ECF1 #D4D9DD #DFE3E8 #E8ECF1;
+}
+.iposted .ipost {
+    font-weight: bold;
+    left: 0;
+    padding-left: 4px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 8px;
+}
+span.bbs, del {
+    text-decoration: line-through;
+}
+textarea {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+a, a:link, a:visited {
+    color: #22538A;
+}
+a:hover, a:active, a:focus {
+    color: #DD4400;
+}
+nav a, nav a:link, nav a:visited {
+    /*background: none repeat scroll 0 0 #44699C;*/
+    border-color: #FFFFFF;
+    color: #D4DAE2;
+}
+nav a:hover, nav a:active, nav a:focus {
+    background: none repeat scroll 0 0 #FF6600;
+    border-color: #FF6600;
+    color: #FFFFFF;
+}
+.blocktable .inbox {
+    border-color: #B9C5CE #D9E1E7;
+}
+.blocktable .inbox tbody {
+    background: none repeat scroll 0 0 #FCFDFE;
+}
+.blocktable td {
+    border-color: #DFE6EE;
+}
+.blocktable th {
+    background: none repeat scroll 0 0 #44699C;
+    border-color: #CAD7E1;
+    color: #D4DAE2;
+}
+
+
+.postmsg div, .postmsg p, .postmsg li {
+    white-space: pre-wrap;
+}
+.postmsg {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+    color: #333333;
+    overflow: hidden;
+    width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.blockpost .postright {
+    padding: 0.3em 18em 0.6em 1.4em;
+    position: relative;
+}
+.postright {
+    background: none repeat scroll 0 0 #FCFDFE;
+}
+.blockpost .postleft {
+    float: left;
+    margin-left: -12.8em;
+    padding: 7px 12px;
+    position: relative;
+    /*width: 194px;*/
+}
+.blockpost .inbox {
+    background: none repeat scroll 0 0 #FCFDFE;
+    border-color: #DFE6EE;
+    border-left-style: solid;
+    border-left-width: 1px;
+    float: right;
+    margin-right: -14em;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.blockpost h2 {
+    background: none repeat scroll 0 0 #519ECF;
+    border-color: #CAD7E1;
+    color: #357082;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font: 1em Arial,Helvetica,sans-serif;
+    height: 1.4em;
+    padding: 0.538em 8px 0.538em 15.3em;
+    white-space: nowrap;
+}
+.blockpost h2 , .blockpost h2  a{
+	color:#FCFDFE;
+}
+.blockpost h2 .conr {
+    float: right;
+    text-align: right;
+}
+.blockpost {
+    background: none repeat scroll 0 0 #EBF1F5;
+    border-color: #B9C5CE #D9E1E7;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    position: relative;
+}
+.linksb, .postlinksb, .linkst, .crumbs {
+    clear: both;
+    position: relative;
+}
+.linkst .inbox, .postlinksb .inbox {
+    overflow: hidden;
+}
+.linkst .crumbs, .postlinksb .crumbs {
+    font-family: "Trebuchet MS",Helvetica,Arial,sans-serif;
+    font-size: 1.154em;
+    padding: 7px 0;
+}
+.crumbs li {
+    float: left;
+    padding-right: 0.4em;
+    white-space: nowrap;
+}
+.crumbs li strong {
+    font-weight: normal;
+}
+.pagelink a, .pagelink * {
+    border-color: #B9C5CE;
+}
+.pagelink {
+    float: left;
+    white-space: nowrap;
+}
+.pagelink .pages-label {
+    display: inline-block;
+}
+.pagelink .item1 {
+    border: 0 none;
+}
+.pagelink strong, .pagelink a {
+    border-style: none none none solid;
+    border-width: 0 0 0 1px;
+    display: inline-block;
+    margin-right: -6px;
+    padding: 0 12px 0 10px;
+}
+.blockpost .postleft dl {
+    padding: 0;
+}
+.blockpost dt {
+    display: block;
+    height: 1.262em;
+    left: 0;
+    overflow: hidden;
+    padding: 0.538em 0 0.538em 12px;
+    position: absolute;
+    top: -2.565em;
+    width: 206px;
+	/*text-shadow: 0 0 6px #0044FF;*/
+}
+.blockpost dt strong {
+    font-size: 1.131em;
+    font-weight: bold;
+}
+.blockpost .postleft dd {
+    font-size: 0.923em;
+}
+.blockpost .usercontacts {
+    padding: 7px 0;
+}
+.blockpost .usercontacts .website {
+    background: url("images/ext.png") no-repeat scroll left 65% transparent;
+    display: inline-block;
+    line-height: normal;
+    padding-left: 18px;
+}
+.blockpost .postleft .usertitle {
+    font-size: 1em;
+    padding: 4px 0 6px;
+}
+strong, th {
+    font-weight: bold;
+}
+strong, th {
+    font-weight: bold;
+}
+.postavatar {
+    display: block;
+    margin: 10px 0 4px;
+}
+
+footer {
+bottom: 0;
+    position: relative;
+	height: 3.7em;
+}
+#brdmain { margin-bottom: 5em; height: auto; min-height: 100%; }
+postlinksb .crumbs {
+    margin-right: 11em;
+}
+.BV { color: #2F7FCC}
+.R { color: #CB546B}
+.BL { color: #6C77C1 }
+.J { color: #BABD2F }
+.N { color: #C2C2DA }
+.G { color: #606090 }
+.V { color: #009D9D }
+.VP { color: #2ECF73 }
+.VI { color: #C53DFF }
+.ROSE { color: #ED67EA }
+.CH { color: #98E2EB }
+.T { color: #A4CF9E }
+.CR { color: #EB1D51 }
+.CV { color: #2ECF73 }
+.CJ { color: #BABD2F }
+
+.postleft .CV { color: #60E79B;}
+.postleft .CR { color: #F5547C;}
+.postleft .CJ { color: #DBDE61 }
+
+
+footer a {
+	font-weight: bold;
+}
+
+.postmsg a, .postmsg a:link, .postmsg  a:visited {
+    text-decoration: underline;
+}
+
+blockquote {
+    overflow: hidden;
+    width: 100%;
+}
+
+.quotebox {
+    background: none repeat scroll 0 0 #F8F9F0;
+    border-color: #7AADBD;
+    color: #566579;
+    border-style: solid;
+    border-width: 1px 1px 1px 3px;
+    margin: 0.75em 1em 2em;
+    padding: 0.2em 0.75em;
+}
+
+.quotebox figcaption {
+    color: #303070;
+    font-weight: bold;
+    line-height: 1.462em;
+    padding: 0.75em 0 0;
+    font-size: 0.9em;
+}
+.quotebox blockquote p {
+    font-size: 0.85em;
+	/*white-space: normal;*/
+}
+
+
+.postmsg ul, ol {
+    padding-left: 15px;
+	list-style-type: disc;
+}
+
+.flag {
+    display:none;
+}
+.flag.selected {
+    display:block;
+}
+.flagImg {
+    margin-right: 4px;
+}
+.flags {
+    margin-bottom: 0.7em;
+}
+
+.pika {
+	background: url("images/pikachu.png") no-repeat scroll right top transparent;
+    display: inline-block;
+    line-height: normal;
+    padding-right: 18px;
+}
+
+.ext {
+	vertical-align: bottom;
+}
+
+.topicLink {
+    font-weight: bold;
+}
+.sticky {
+    background-color: #E8EDFC;
+}
+.icon-locked {
+	background-image: url("images/lock.png");
+	float: left;
+    overflow: hidden;
+	border-style: none;
+	height: 16px;
+	width: 16px;
+}
+
+.linkst .crumbs {  
+	border-color: #B9C5CE;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+.postlinksb .crumbs {  
+	border-color: #B9C5CE;
+	border-top-style: dotted;
+	border-top-width: 1px;
+}
+
+#communities{
+	font-size: 1.5em;
+	/*background: none repeat scroll 0 0 #F6F9FC;
+	border-color: #B9C5CE;
+	border-style: dotted;
+	border-width: 1px;*/
+	margin: 1em auto 1em auto;
+	width:60%;
+}
+#communities ul, #communities li {
+	display: inline;
+}
+#communities li {
+	margin:0px 5px 0px 5px;
+}
+
+#categories {
+    background: none repeat scroll 0 0 #F6F9FC;
+    border-color: #B9C5CE #D9E1E7;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 18px;
+}
+#catlist {
+	margin: 1em auto 1em auto;
+	width:85%;
+	font-size:1.25em;
+
+}
+#catlist ul {
+	width:40%;
+	margin-left:auto;
+	margin-right:auto;
+	background: none repeat scroll 0 0 #FCFDFE;
+	padding:0;
+    border-color: #D9E1E7;
+    border-style: solid;
+    border-width: 1px;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+}
+#catlist li{
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0 20%;
+}
+#catlist li img{
+	margin-right:0.75em;
+}
+
+.cathidden{
+	display:none;
+}
+
+
+html, body {height: 100%;}
+
+#container {min-height: 100%;}
+
+#brdmain {overflow:auto;
+	margin-bottom: 6.7em;}  /* must be same height as the footer */
+
+footer {position: relative;
+	margin-top: -3.8em; /* negative value of footer height */
+	height: 3.7em;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+.crumbs li a img{
+	margin-right:0.35em;
+}
