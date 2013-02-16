@@ -87,7 +87,7 @@ function readThreadList($packet, $display = true) {
 		$isPinned = ord($packet[18+$lenTitle+$lenAuthor+$lenLastPoster]);
 
 
-		$packet = substr($packet, 19+$lenTitle+$lenAuthor+$lenLastPoster);
+		$packet = substr($packet, 21+$lenTitle+$lenAuthor+$lenLastPoster);
 
 		$trClass = "row";
 		if($isPinned) $trClass .= " sticky";

@@ -2,7 +2,7 @@
 
 require('Socket.php');
 require('forum.php');
-$versionForum = 17;
+$versionForum = 19;
 
 $socket = new Socket('37.59.46.220');
 $socket->connect();

@@ -287,13 +287,13 @@ function removeTags($str) {
 
 function translations($str, $idPost) {
 
-	preg_match_all("/(?:\s|<br\/?>)*(?:\[#(?:br|cn|en|es|fr|hu|nl|pl|ru|tr|vk|id|ro)\](?:\s|<br\/?>)*.*?(?:\s|<br\/?>)*\[\/#(?:br|cn|en|es|fr|hu|nl|pl|ru|tr|vk|id|ro)\](?:\s|<br\/?>)*)+(?:\s|<br\/?>)*/si", $str, $blocMultiLang);
+	preg_match_all("/(?:\s|<br\/?>)*(?:\[#(?:br|cn|en|es|fr|hu|nl|pl|ru|tr|vk|id|ro|de)\](?:\s|<br\/?>)*.*?(?:\s|<br\/?>)*\[\/#(?:br|cn|en|es|fr|hu|nl|pl|ru|tr|vk|id|ro|de)\](?:\s|<br\/?>)*)+(?:\s|<br\/?>)*/si", $str, $blocMultiLang);
 
 	for($iBlocMulti = 0; $iBlocMulti < count($blocMultiLang[0]); $iBlocMulti++) {
 
 		$newStr = '<div id="multilang'.$idPost.'-'.($iBlocMulti+1).'">';
 
-		preg_match_all("/\[#(br|cn|en|es|fr|hu|nl|pl|ru|tr|vk|id|ro)\](?:\s|<br\/?>)*(.*?)(?:\s|<br\/?>)*\[\/#\g1\]/si", $blocMultiLang[0][$iBlocMulti], $blocLang);
+		preg_match_all("/\[#(br|cn|en|es|fr|hu|nl|pl|ru|tr|vk|id|ro|de)\](?:\s|<br\/?>)*(.*?)(?:\s|<br\/?>)*\[\/#\g1\]/si", $blocMultiLang[0][$iBlocMulti], $blocLang);
 
 		$newStr .= '<div class="flags">';
 		for($iBloc = 0; $iBloc < count($blocLang[1]); $iBloc++) {
